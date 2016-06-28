@@ -6,10 +6,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
   box-sizing: border-box;
   z-index: 800;
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   border-top: 2px solid #b92b27;
   border-bottom: 1px solid #ddd;
@@ -25,9 +24,6 @@
 
 .fixed {
   position: fixed; }
-
-.search {
-  position: relative; }
 
 .z {
   background: black;
@@ -46,11 +42,11 @@
 .searchbar input[type=text] {
   float: left;
   color: black;
-  height: 1.9rem;
   border: 1px solid lightgray;
   background: lightgray;
   margin-bottom: 0;
-  width: 30%; }
+  width: 60%;
+  height: 1.9rem; }
 
 input::-webkit-input-placeholder {
   color: gray !important; }
@@ -70,8 +66,11 @@ input:-ms-input-placeholder {
   margin-top: 0; }
 
 .btn {
-  height: 2rem;
-  line-height: 1rem; }
+  width: 30%;
+  line-height: 1rem;
+  height: 2rem!important;
+  line-height: 2rem!important;
+  padding: 0; }
 
 button[disabled] {
   background: #3e78ad;
@@ -82,36 +81,34 @@ button[disabled]:hover {
   opacity: .5; }
 
 .sag {
-  position: absolute;
   right: 0 !important;
-  top: -1px; }
+  position: relative;
+  float: right !important; }
+  .sag .col {
+    padding: 0 !important; }
   .sag a:hover {
     background: #dedede; }
   .sag a {
     text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
+    padding: 2%;
     -webkit-tap-highlight-color: transparent;
-    color: #999999; }
+    color: #999999;
+    font-weight: 500; }
     .sag a img {
       height: 24px;
       width: 24px; }
-  .sag ul {
-    position: absolute;
-    right: 38px;
-    top: 25px; }
-    .sag ul li {
-      border-top: 1px solid lightgray; }
-      .sag ul li a {
-        display: block;
-        padding: 7px;
-        color: #2b6dad;
-        background: #f6f6f6;
-        font-size: 15px; }
+  .sag ul li {
+    border-top: 1px solid lightgray; }
+    .sag ul li a {
+      display: block;
+      padding: 7px;
+      color: #2b6dad;
+      background: #f6f6f6;
+      font-size: 15 px; }
 
 .prof {
-  display: none; }
+  display: none;
+  margin: 7px -8px; }
 
 .active {
   color: #b92b27; }
@@ -131,5 +128,11 @@ button[disabled]:hover {
   z-index: 999;
   transform: rotate(-45deg);
   background: lightblue; }
+
+.prof {
+  width: 100px; }
+
+.sag ul {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */

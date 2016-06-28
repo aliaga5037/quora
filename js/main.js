@@ -3,36 +3,34 @@ jQuery(document).ready(function($) {
 		function() {
 			$('.z').css("z-index","9").fadeIn();
 			$(this).css({
-				"width": "600px",
 				"marginRight": "20px",
 				"backgroundColor": "white"
 			})
 			$(".askbtn").text("suali tesdiqle")
+            $(".searchbar").addClass('m11')
 		$(".sag").css("display","none");
     });
-    
     $(".btn").click(function(event) {
     	if($(".search").val().length == 0){
     		$(".search").val("?")
     	}
     	$('.z').css("z-index","9").fadeIn();
 			$(".search").css({
-				"width": "600px",
 				"marginRight": "20px",
 				"backgroundColor": "white"
 			})
 			$(".askbtn").text("suali tesdiqle")
+            $(".searchbar").addClass('m11')
 		$(".sag").css("display","none");    });
-   
 	$('.z').click(function(e) {
 		$(this).fadeOut(function() {
 		});
 		$('.search').css({
-				"width": "30%",
 				"marginRight": "0px",
 				"backgroundColor": "lightgray"
 			})
 		$(".sag").css("display","block");
+        $(".searchbar").removeClass('m11');
 		 $(".askbtn").text("sual ver")
 		
 		
